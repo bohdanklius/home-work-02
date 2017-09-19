@@ -1,105 +1,162 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Social polling</title>
-</head>
-<body>
-    <header>
-        <h1>Соціальне опитування на тему "Соціальні мережі"</h1>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Social polling</title>
+    </head>
+    <body>
+        <header>
+            <h1>Соціальне опитування на тему "Соціальні мережі"</h1>
+        </header>
         <main>
             <form method="POST" action="https://formspree.io/killyourshit@gmail.com">
-                    <article>
-                        <h2>Шановний читач. Просимо Вас взяти участь в соціологічному дослідженні,<br>
-                        присвяченому проблемам в сфері впливу соціальних мереж на свідомість <br> 
-                        сучасної молоді. Ми сподіваємося на Ваші щирі відповіді. Всі дані будуть<br>
-                        використовуватися в узагальненому вигляді</h2><br>
-                        <hr>
-                        <h3>Форма</h3>
-                        <section>
-                            <h3>Якою соціальною мережею ви користуєтеся найбільше?</h3>
-                            <label><input type="checkbox" name="social network" value="facebook" checked>Facebook</label><br>
-                            <label><input type="checkbox" name="social network" value="vkontakte">Вконтакті</label><br>
-                            <label><input type="checkbox" name="social network" value="odnoklasniki">Однокласники</label><br>
-                            <label><input type="checkbox" name="social network" value="Twitter">Twitter</label><br>
-                            <label><input type="checkbox" name="social network" value="Other">Інша відповідь:</label>
-                            <input type="text" name="registered" placeholder="Інша відповідь">
-                        </section> 
-                        <section>
-                            <h3>Що вас підштовхнуло зареєструватися в соціальній мережі?</h3>
-                            <label><input type="radio" name="registration in the social network" value="friend">Друг</label><br>
-                            <label><input type="radio" name="registration in the social network" value="all-my-friends-there">Всі мої друзі там, чим я гірший</label><br>
-                            <label><input type="radio" name="registration in the social network" value="interest">Цікавість</label><br>
-                            <label><input type="radio" name="registration in the social network" value="add-new-friends">Бажання завести нових друзів</label><br>
-                        </section>  
-                        <section>
-                            <h3>Скільки людей у вас в друзях?</h3>
-                            <label><input type="radio" name="how many friends" value="<50">До 50</label><br>
-                            <label><input type="radio" name="how many friends" value="50-100">50-100</label><br>
-                            <label><input type="radio" name="how many friends" value="100-200">100-200</label><br>
-                            <label><input type="radio" name="how many friends" value="200-500">200-500</label><br>
-                            <label><input type="radio" name="how many friends" value="500+">Більше 500</label><br>
-                        </section>
-                        <section>
-                            <h3>Зі скількома з друзів ви знайомі особисто?</h3>
-                            <select id="simple" name="How many friends do you know personally">
-                              <option>До 20</option>
-                              <option>Від 20 до 50</option>
-                              <option>Від 50 до 100</option>
-                              <option>Більше 100</option>
-                            </select>  
-                        </section>   
-                        <section>
-                            <h3>Скільки часу в день ви проводите в соціальній мережі?</h3>
-                            <input type="time" name="time in social network" id="time">
-                        </section>
-                        <section>
-                            <h3>Ви вважаєте себе залежним від соціальних мереж?</h3>
-                            <label><input type="radio" name="dependence" value="yes">Так</label><br>
-                            <label><input type="radio" name="dependence" value="no">Ні</label><br>
-                            <label><input type="radio" name="dependence" value="deliberate">Важко відповісти</label><br>
-                        </section>
-                        <hr>
-                        <section>
-                            <h3>Відправте результат</h3>
-                            <label for="client-name">Ваше ім'я:
-                            <input type="text" name="client-name"
-                              id="client-name"
-                              placeholder="Ваше ім'я"
-                              required>
-                            </label>
-                            <br>
-                            <label>Ваш email:
-                                <input type="email" name="client-email"
-                                placeholder="Ваш email"
-                                required>
-                            </label>
-                            <br>
-                            <label>Ваш пароль:
+                <article>
+                    <h2>
+                        Шановний читач. Просимо Вас взяти участь в соціологічному дослідженні,<br>
+                        присвяченому проблемам в сфері впливу соціальних мереж на свідомість <br>
+                        сучасної молоді. Ми сподіваємося на Ваші щирі відповіді. Всі дані будуть<br>використовуватися в узагальненому вигляді
+                    </h2>
+                    <br>
+                    <hr>
+                    <h3>Форма</h3>
+                    <section>
+                        <h3>Якою соціальною мережею ви користуєтеся найбільше?</h3>
+                        <label>
+                            <input type="checkbox" name="facebook" value="facebook" checked>Facebook
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="vkontakte" value="vkontakte">Вконтакті
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="odnoklasniki" value="odnoklasniki">Однокласники
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="twitter" value="Twitter">Twitter
+                        </label>
+                        <br>
+                        <label>
+                            <input type="checkbox" name="other" value="Other">Інша відповідь:
+                        </label>
+                        <input type="text" name="registered" placeholder="Інша відповідь">
+                    </section>
+                    <section>
+                        <h3>Що вас підштовхнуло зареєструватися в соціальній мережі?</h3>
+                        <label>
+                            <input type="radio" name="registration in the social network" value="friend">Друг
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="registration in the social network" value="all-my-friends-there">Всі мої друзі там, чим я гірший
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="registration in the social network" value="interest">Цікавість
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="registration in the social network" value="add-new-friends">Бажання завести нових друзів
+                        </label>
+                        <br>
+                    </section>
+                    <section>
+                        <h3>Скільки людей у вас в друзях?</h3>
+                        <label>
+                            <input type="radio" name="how many friends" value="<50">До 50
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="how many friends" value="50-100">50-100
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="how many friends" value="100-200">100-200
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="how many friends" value="200-500">200-500
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="how many friends" value="500+">Більше 500
+                        </label>
+                        <br>
+                    </section>
+                    <section>
+                        <h3>Зі скількома з друзів ви знайомі особисто?</h3>
+                        <select id="simple" name="How many friends do you know personally">
+                            <option>До 20</option>
+                            <option>Від 20 до 50</option>
+                            <option>Від 50 до 100</option>
+                            <option>Більше 100</option>
+                        </select>
+                    </section>
+                    <section>
+                        <h3>Скільки часу в день ви проводите в соціальній мережі?</h3>
+                        <input type="time" name="time in social network" id="time">
+                    </section>
+                    <section>
+                        <h3>Ви вважаєте себе залежним від соціальних мереж?</h3>
+                        <label>
+                            <input type="radio" name="dependence" value="yes">Так
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="dependence" value="no">Ні
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="dependence" value="deliberate">Важко відповісти
+                        </label>
+                        <br>
+                    </section>
+                    <hr>
+                    <section>
+                        <h3>Відправте результат</h3>
+                        <label for="client-name">
+                            Ваше ім'я:
+                            <input type="text" name="client-name" id="client-name" placeholder="Ваше ім'я" required>
+                        </label>
+                        <br>
+                        <label>
+                            Ваш email:
+                                <input type="email" name="client-email" placeholder="Ваш email" required>
+                        </label>
+                        <br>
+                        <label>
+                            Ваш пароль:
                                 <input type="password" name="client-password">
-                            </label>
-                            <br>
-                            <label>Стать:</label>
-                            <label><input type="radio" name="client-gender" value="Male">Чоловіча</label>
-                            <label><input type="radio" name="client-gender" value="female">Жіноча</label>
-                            <br>
-                            <label>Your comment:
+                        </label>
+                        <br>
+                        <label>Стать:</label>
+                        <label>
+                            <input type="radio" name="client-gender">Чоловіча
+                        </label>
+                        <label>
+                            <input type="radio" name="client-gender">Жіноча
+                        </label>
+                        <br>
+                        <label>
+                            Ваш коментар:
                               <br>
-                              <textarea></textarea>
-                            </label>
-                            <br>
-                            <input type="submit" value="Відправити">
-                        </section>    
-                    </article> 
+                            <textarea></textarea>
+                        </label>
+                        <br>
+                        <input type="submit" value="Відправити">
+                    </section>
+                </article>
             </form>
         </main>
         <footer>
             <div>
-            <p>Link for table <a href="table.html">here</a></p>
+                <p>
+                    Link for table <a href="table.html">here</a>
+                </p>
             </div>
         </footer>
-</body>
+    </body>
 </html>
